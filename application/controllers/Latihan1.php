@@ -8,6 +8,7 @@ class Latihan1 extends CI_Controller
     }
     public function penjumlahan($n1, $n2)
     {
+        $data['user'] = $this->m_data->ambil_data()->result();
         $this->load->model('Model_latihan1');
 
         $data['nilai1'] = $n1;
